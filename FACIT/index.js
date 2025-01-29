@@ -12,7 +12,7 @@ const title = document.getElementById("main-heading");
 console.log(title);
 
 // GetElementByClassName() ===========================================
-// 2. Skapa en variabel som heter listItemsByClass som innehåller alla list-items (node list)
+// 2. Skapa en variabel som heter listItemsByClass som innehåller alla list-items
 // Logga listItemsByClass till consolen
 const listItemsByClass = document.getElementsByClassName("list-items");
 console.log(listItemsByClass);
