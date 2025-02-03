@@ -105,16 +105,19 @@ keanu.remove();
 // TRAVERSING THE DOM TRAVERSING THE DOM TRAVERSING THE DOM TRAVERSING THE DOM
 
 // 12. Log till consolen parent till din lista
+// svar = <div class="container">
 const ulTraverse = document.querySelector("ul");
 console.log(ulTraverse.parentNode);
 
 // 13. Log till consolen grandparent till din lista
+// svar = <body>
 console.log(ulTraverse.parentNode.parentNode);
-const test = ulTraverse.prev;
-console;
 
 // 14. Log till consolen child till din lista
-// OBS: Även tabbarna räknas som en text node (så du kanske inte förväntade dig resultatet)
+
+// Mellan varje <li>, finns det en 'ny rad' (\n) och några mellanslag ( ). Dessa tolkas som 'text nodes'
+// OBS: Även 'ny rad' räknas som en text node (så du kanske inte förväntade dig resultatet)
+// TIPS! Titta på 'node value' i consolen av Google Chrome för en text node!
 console.log(ulTraverse.childNodes);
 
 // 15. Gör first child i din lista till en röd background
@@ -125,7 +128,9 @@ ulTraverse.firstChild.style.backgroundColor = "Red";
 ulTraverse.childNodes[0].style.backgroundColor = "Red";
 
 // 16. Log till console previous sibling till din lista
+// Svar: Också lite misledande! Det finns en text node som är 'ny rad' och några mellanslag
 console.log(ulTraverse.previousSibling);
 
 // 17. Log till console next sibling till din lista
+// Svar: Också lite misledande! Det finns en text node som är 'ny rad' och några mellanslag
 console.log(ulTraverse.nextSibling);
