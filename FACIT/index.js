@@ -95,7 +95,6 @@ myListItemHobbit.style.fontSize = "3rem";
 // REMOVING REMOVING REMOVING REMOVING REMOVING REMOVING REMOVING REMOVING
 
 // 11. Min fru hatar Keanu Reeves... ta bort alla filmer som han är med i.
-// Tips: Du får uppdatera HTML koden
 const keanu = document.querySelector(".keanu");
 keanu.remove();
 
